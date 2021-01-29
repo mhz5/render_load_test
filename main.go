@@ -10,9 +10,10 @@ import (
 )
 
 func main() {
-	ConfigRuntime()
-	StartWorkers()
-	StartGin()
+	fmt.Println("hello")
+	//ConfigRuntime()
+	//StartWorkers()
+	//StartGin()
 }
 
 // ConfigRuntime sets the number of operating system threads.
