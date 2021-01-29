@@ -11,8 +11,8 @@ import (
 )
 
 func main() {
-	fmt.Println("hello")
 	for true {
+		fmt.Println("new deploy")
 		resp, err := http.Get("mz-render-play:10000")
 		if err != nil {
 			fmt.Println(err)
