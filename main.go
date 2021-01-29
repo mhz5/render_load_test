@@ -13,7 +13,7 @@ import (
 func main() {
 	fmt.Println("hello")
 	for true {
-		resp, err := http.Get("https://faredelivery.org/room/hn")
+		resp, err := http.Get("mz-render-play:10000")
 		if err != nil {
 			fmt.Println(err)
 		}
