@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"log"
+	"net/http"
 	"os"
 	"runtime"
 
@@ -11,6 +12,14 @@ import (
 
 func main() {
 	fmt.Println("hello")
+	for true {
+		resp, err := http.Get("https://faredelivery.org/room/hn")
+		if err != nil {
+			fmt.Println(err)
+		}
+		fmt.Println(resp)
+	}
+
 	//ConfigRuntime()
 	//StartWorkers()
 	//StartGin()
