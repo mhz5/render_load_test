@@ -13,7 +13,7 @@ import (
 func main() {
 	for true {
 		fmt.Println("new deploy")
-		resp, err := http.Get("mz-render-play:10000")
+		resp, err := http.Get("https://mz-render-play:10000")
 		if err != nil {
 			fmt.Println(err)
 		}
